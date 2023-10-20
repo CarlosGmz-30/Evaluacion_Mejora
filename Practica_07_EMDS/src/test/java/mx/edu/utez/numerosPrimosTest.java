@@ -24,4 +24,8 @@ public class numerosPrimosTest {
         Assert.assertEquals(resultadoEsperado, resultadoObtenido);
 
     }
+
+    @Test
+    public void numerosPrimos() {
+    }
 }
