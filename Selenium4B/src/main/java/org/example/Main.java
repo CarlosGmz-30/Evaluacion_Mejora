@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class Main {
     public static void main(String[] args) {
         // Configuración de ChromeDriver
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
         // CASO DE PRUEBA 1: Buscar en google Selenium
 
         // Paso 1: Abrir el navegador
