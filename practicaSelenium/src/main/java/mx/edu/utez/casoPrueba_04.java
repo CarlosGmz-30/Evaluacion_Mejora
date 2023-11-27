@@ -90,11 +90,4 @@ public class casoPrueba_04 {
         // Cerrar el navegador al finalizar
         navegador.quit();
     }
-
-    public static void scrollToElement(WebDriver driver, By locator) {
-        WebElement element = driver.findElement(locator);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", element);
-    }
-
 }
