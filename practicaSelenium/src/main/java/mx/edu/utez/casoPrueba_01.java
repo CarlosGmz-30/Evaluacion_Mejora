@@ -13,10 +13,10 @@ import java.time.Duration;
 
 public class casoPrueba_01 {
     public static void main(String[] args) {
-        agregarCarrito();
+        generarTicket();
     }
 
-    public static void agregarCarrito() {
+    public static void generarTicket() {
         // Configuración del ChromeDriver
         System.setProperty("webdriver.chrome.driver", "src/main/resources/drivers/chromedriver.exe");
 
@@ -58,11 +58,11 @@ public class casoPrueba_01 {
         WebDriverWait wait = new WebDriverWait(navegador, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"add-btn-container\"]/button")));
 
-        // Ubica el WebElement del botón
-        WebElement addButton = navegador.findElement(By.xpath("//*[@id=\"add-btn-container\"]/button"));
+        // Ubicamos el WebElement del botón
+        WebElement login = navegador.findElement(By.xpath("//*[@id=\"add-btn-container\"]/button"));
 
-        // Utiliza JavascriptExecutor para hacer clic en el botón
-        js.executeScript("arguments[0].click();", addButton);
+        // Utilizamos JavascriptExecutor para hacer clic en el botón
+        js.executeScript("arguments[0].click();", login);
 
         // Esperamos un tiempo adicional (puedes ajustar esto según sea necesario)
         try {
