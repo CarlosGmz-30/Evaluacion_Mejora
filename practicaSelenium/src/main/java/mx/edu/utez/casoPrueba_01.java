@@ -64,7 +64,7 @@ public class casoPrueba_01 {
         // Utilizamos JavascriptExecutor para hacer clic en el botón
         js.executeScript("arguments[0].click();", login);
 
-        // Esperamos un tiempo adicional (puedes ajustar esto según sea necesario)
+        // Esperamos un tiempo adicional
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {

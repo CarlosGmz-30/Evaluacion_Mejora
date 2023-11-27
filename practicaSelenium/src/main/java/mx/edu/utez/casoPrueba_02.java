@@ -67,7 +67,7 @@ public class casoPrueba_02 {
         navegador.findElement(By.xpath("/html/body/header/nav/ul/button[1]")).click();
         navegador.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // Esperamos un tiempo adicional (puedes ajustar esto según sea necesario)
+        // Esperamos un tiempo adicional
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
